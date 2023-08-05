@@ -58,6 +58,10 @@ header ul li a{
 
 }
 
+header ul li a:hover{
+    color: rgb(93, 93, 93);
+}
+
 
 .btn-contato button{
  width: 120px;
@@ -67,11 +71,13 @@ header ul li a{
  color: black;
  cursor: pointer;
  transition: .2s;
+ font-weight: bold;
 }
 
-button:hover {
-    background-color: #666da5;
+.button-contato:hover {
+    background-color: #bea377;
 }
+
 
 div.body-area {
     height: 100%;
@@ -125,7 +131,7 @@ h1 {
 }
 .footer_rights{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .footer_link:link{

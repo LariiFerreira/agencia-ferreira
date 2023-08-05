@@ -39,7 +39,7 @@ header{
 
 header i{
 font-size: 30px;
-color: blue;
+
 }
 
 header ul{
@@ -58,6 +58,10 @@ header ul li a{
 
 }
 
+header ul li a:hover{
+    color: rgb(93, 93, 93);
+}
+
 
 .btn-contato button{
  width: 120px;
@@ -67,6 +71,11 @@ header ul li a{
  color: black;
  cursor: pointer;
  transition: .2s;
+ font-weight: bold;
+}
+
+.button-contato:hover {
+    background-color: #bea377;
 }
 
 div.body-area {
@@ -155,18 +164,18 @@ div.button-area {
     justify-content: space-around;
 }
 
-button {
+.button-area > button {
     background-color:#fff1da;
     color: black;
     height: 90%;
-    border-radius: 100%;
+    border-radius: 10%;
     border: none;
     font-size: 1em;
     font-weight: bold;
     width: 150px;
 }
 
-button:hover {
+.button-area button:hover {
     background-color: #bea377;
 }
 
@@ -203,7 +212,7 @@ button:hover {
 
 
 @media (max-width: 1900px) {
-    button{
+    .button-area > button {
         width: 200px;
     }
     .button-area {

@@ -7,6 +7,12 @@
 
 html{
     height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: inherit;
+    overflow-x: hidden;
 }
 
 .container{
@@ -23,20 +29,13 @@ html{
 header{
     width: 100%;
     padding: 60px 4%;
-    position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
-}
-
-header.rolagem{
-    background-color: #fff;
+    background-color: blanchedalmond;
     padding: 20px 4%;
 }
 
-header.rolagem a, header.rolagem{
-    color: gray;
-}
+
 
 header i{
 font-size: 30px;
@@ -59,6 +58,11 @@ header ul li a{
 
 }
 
+header ul li a:hover{
+    color: rgb(93, 93, 93);
+}
+
+
 .btn-contato button{
  width: 120px;
  height: 40px;
@@ -67,7 +71,13 @@ header ul li a{
  color: black;
  cursor: pointer;
  transition: .2s;
+ font-weight: bold;
 }
+
+.button-contato:hover {
+    background-color: #bea377;
+}
+
 
 
 .banner{
@@ -88,9 +98,6 @@ header ul li a{
 font-size: 4em;
 color: #fff;
 } 
-span{
-    color: #fff;
-}
 
 .frase{ 
     padding: 0px 50px 50px 50px;
@@ -176,7 +183,7 @@ figcaption {
 }
 .footer_rights{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .footer_link:link{
@@ -192,3 +199,43 @@ figcaption {
     padding: 0px 20% 0px 20%;
     margin: 50px 0px 50px 0px;
 }
+
+
+@media (max-width: 910px) {
+    .footer {
+        height: 350px;
+    }
+    .footer_content{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer_data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+@media (max-width: 770px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .destinos {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (max-width: 475px) {
+    .banner h1{
+        font-size: 2em;
+    } 
+}
+
+@media (max-width: 450px) {
+    .footer {
+        height: 400px;
+    }
+}
+    
